@@ -9,7 +9,7 @@ import { UserService } from './user.service';
 export class AppComponent  {
   name = 'Dependency Injection';
   userName: string;
-
+  // When this component is created, Angular will inject the singleton instance of `UserService` here
   constructor(private userService: UserService) {}
 
   signIn(): void {
