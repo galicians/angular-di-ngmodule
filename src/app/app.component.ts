@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Dependency Injection';
+  userName: string;
+
+  constructor(private userService: UserService) {}
+
+  signIn(): void {
+    this.userService.setUser({
+      name: 'Pablo P'
+    })
+    this.userName = this.userService.getUser().name;
+    console.log('User name is: ', this.userName)
+  }
+
 }

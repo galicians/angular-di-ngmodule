@@ -9,3 +9,12 @@
 <span>By doing these two steps Angular will manage creating the injector and resolving the dependencies</span>
 </ol>
 
+<div> <p
+    *ngIf="userName"
+    class="welcome">
+    Welcome: {{ userName }}!
+</p> <button
+    (click)="signIn()"
+    class="ui button"
+    >Sign In
+</button> </div>
