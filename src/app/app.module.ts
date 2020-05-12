@@ -15,7 +15,9 @@ import { AnalyticsService } from './analytics.service';
     recordEvent: (metric: Metric): void => {
       console.log('The metric is :', metric)
     }
-  }}} ],
+  }
+return new AnalyticsService(loggingImplementation)
+  }} ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
