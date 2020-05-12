@@ -27,3 +27,8 @@
   <li>Inject a value</li>
   <li>Call any function and inject the return value of that function</li>
   </ul>
+
+  <h3>useFactory</h3>
+  <p>useFactory takes a function and whatever this function returns will be injected.</p>
+
+  <p>Using a factory is the most powerful way to create injectables, because we can do whatever we want within the factory function. Sometimes our factory function will have dependencies of it's own e.g. make HTTP request to a particular URL.</p>
