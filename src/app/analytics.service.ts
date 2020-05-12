@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Metric, AnalyticsImplementation } from '../analytics-demo.interface';
+import { Metric, AnalyticsImplementation } from './analytics-demo.interface';
 
 @Injectable()
 export class AnalyticsService {
